@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct UserModel: Codable {
+struct UserDetailModel: Codable {
     let publicRepos: Int
     
     private enum CodingKeys: String, CodingKey {

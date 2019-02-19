@@ -14,8 +14,8 @@
 		60EC3D99221648DF00C5A4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EC3D98221648DF00C5A4D8 /* Assets.xcassets */; };
 		60EC3D9C221648DF00C5A4D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60EC3D9A221648DF00C5A4D8 /* LaunchScreen.storyboard */; };
 		60EC3DA822164F8500C5A4D8 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC3DA722164F8500C5A4D8 /* UserCell.swift */; };
-		60EC3DB422165F7B00C5A4D8 /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC3DB322165F7B00C5A4D8 /* RepoModel.swift */; };
-		60EC3DB7221935B900C5A4D8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC3DB6221935B800C5A4D8 /* UserModel.swift */; };
+		60EC3DB422165F7B00C5A4D8 /* SearchUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC3DB322165F7B00C5A4D8 /* SearchUserModel.swift */; };
+		60EC3DB7221935B900C5A4D8 /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EC3DB6221935B800C5A4D8 /* UserDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		60EC3D9B221648DF00C5A4D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60EC3D9D221648DF00C5A4D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60EC3DA722164F8500C5A4D8 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
-		60EC3DB322165F7B00C5A4D8 /* RepoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
-		60EC3DB6221935B800C5A4D8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		60EC3DB322165F7B00C5A4D8 /* SearchUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUserModel.swift; sourceTree = "<group>"; };
+		60EC3DB6221935B800C5A4D8 /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
 		63F106A9330C7649565C191A /* Pods-SearchGithubUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchGithubUser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchGithubUser/Pods-SearchGithubUser.debug.xcconfig"; sourceTree = "<group>"; };
 		B1F9D3B76F108D4A16DF8993 /* Pods-SearchGithubUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchGithubUser.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchGithubUser/Pods-SearchGithubUser.release.xcconfig"; sourceTree = "<group>"; };
 		F8972BF65DD53BBC16233801 /* Pods_SearchGithubUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchGithubUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,8 +113,8 @@
 		60EC3DB9221BB85400C5A4D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				60EC3DB322165F7B00C5A4D8 /* RepoModel.swift */,
-				60EC3DB6221935B800C5A4D8 /* UserModel.swift */,
+				60EC3DB322165F7B00C5A4D8 /* SearchUserModel.swift */,
+				60EC3DB6221935B800C5A4D8 /* UserDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,11 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60EC3DB7221935B900C5A4D8 /* UserModel.swift in Sources */,
+				60EC3DB7221935B900C5A4D8 /* UserDetailModel.swift in Sources */,
 				60EC3D94221648DE00C5A4D8 /* SearchGithubUserViewController.swift in Sources */,
 				60EC3D92221648DE00C5A4D8 /* AppDelegate.swift in Sources */,
 				60EC3DA822164F8500C5A4D8 /* UserCell.swift in Sources */,
-				60EC3DB422165F7B00C5A4D8 /* RepoModel.swift in Sources */,
+				60EC3DB422165F7B00C5A4D8 /* SearchUserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

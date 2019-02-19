@@ -25,7 +25,7 @@
                                     <rect key="frame" x="0.0" y="118" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPn-1B-xGC">
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPn-1B-xGC">
                                             <rect key="frame" x="168" y="7" width="39" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="더보기"/>
@@ -53,7 +53,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbo-TK-w66">
-                                                    <rect key="frame" x="101" y="51" width="259" height="21"/>
+                                                    <rect key="frame" x="101" y="50" width="259" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -78,16 +78,21 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="fCX-mx-ubP"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </searchBar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lwq-TO-ED4">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tOX-4n-dyH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Ow-Bj-FkQ"/>
                             <constraint firstItem="lyJ-GR-Te1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CDU-Na-dkB"/>
+                            <constraint firstItem="lwq-TO-ED4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P4d-Kz-tOl"/>
                             <constraint firstItem="tOX-4n-dyH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ye7-iN-nqq"/>
                             <constraint firstItem="lyJ-GR-Te1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fN1-Xa-YDA"/>
                             <constraint firstItem="lyJ-GR-Te1" firstAttribute="top" secondItem="tOX-4n-dyH" secondAttribute="bottom" id="j41-WI-4nf"/>
+                            <constraint firstItem="lwq-TO-ED4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ko7-TQ-Eiw"/>
                             <constraint firstItem="tOX-4n-dyH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nxq-ex-agp"/>
                             <constraint firstItem="lyJ-GR-Te1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tWp-UJ-OhD"/>
                         </constraints>
@@ -95,6 +100,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Github User" id="WBz-fa-3Qe"/>
                     <connections>
+                        <outlet property="indicator" destination="lwq-TO-ED4" id="MGk-NM-H2z"/>
                         <outlet property="searchBar" destination="tOX-4n-dyH" id="s8M-7q-t5k"/>
                         <outlet property="searchDisplayController" destination="7bE-Tk-5SQ" id="xqv-xN-IRg"/>
                         <outlet property="tableView" destination="lyJ-GR-Te1" id="pEq-g9-K1D"/>

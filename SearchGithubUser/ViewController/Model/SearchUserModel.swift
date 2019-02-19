@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct RepoModel {
+struct SearchUserModel {
     let avatarURL: String
     let name: String
     let url: String
