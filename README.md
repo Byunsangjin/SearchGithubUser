@@ -1,4 +1,4 @@
-IOS 개발자 변상진
+Github Search User
 ================
 사용법
 ----
